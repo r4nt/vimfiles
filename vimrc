@@ -5,9 +5,12 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
 Bundle 'maxbrunsfeld/vim-yankstack'
+
+if ! exists('g:has_system_ycm')
+  Bundle 'Valloric/YouCompleteMe'
+endif
 
 filetype plugin indent on
 
