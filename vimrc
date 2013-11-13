@@ -5,11 +5,15 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'scrooloose/syntastic'
 Bundle 'maxbrunsfeld/vim-yankstack'
+Bundle 'scrooloose/syntastic'
+Bundle 'wincent/Command-T'
 
 if ! exists('g:has_system_ycm')
   Bundle 'Valloric/YouCompleteMe'
+endif
+if ! exists('g:has_system_ultisnips')
+  Bundle 'SirVer/ultisnips'
 endif
 
 filetype plugin indent on
@@ -57,4 +61,9 @@ nmap <C-Down> :lnext<CR><CR>
 nmap <C-Up> :lprev<CR><CR>
 nmap <F11> <Plug>yankstack_substitute_older_paste
 nmap <F12> <Plug>yankstack_substitute_newer_paste
+
+inoremap <C-K> <C-O>:pyf ~/bin/clang-format.py<CR>
+noremap <C-K> :pyf ~/bin/clang-format.py<CR>
+inoremap <C-L> <C-O>:pyf ~/bin/clang-format-unstable.py<CR>
+noremap <C-L> :pyf ~/bin/clang-format-unstable.py<CR>
 
