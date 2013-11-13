@@ -11,7 +11,7 @@ Bundle 'maxbrunsfeld/vim-yankstack'
 
 filetype plugin indent on
 
-so fix-screen.vim
+so ~/.vim/fix-screen.vim
 
 let g:syntastic_always_populate_loc_list = 1
 
