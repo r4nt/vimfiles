@@ -8,6 +8,7 @@ Bundle 'gmarik/vundle'
 Bundle 'maxbrunsfeld/vim-yankstack'
 Bundle 'scrooloose/syntastic'
 Bundle 'wincent/Command-T'
+Bundle 'bling/vim-airline'
 
 if ! exists('g:has_system_ycm')
   Bundle 'Valloric/YouCompleteMe'
