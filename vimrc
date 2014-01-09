@@ -51,8 +51,9 @@ set nowritebackup
 set noswapfile
 
 " Highlight 80 columns:
-highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
-match OverLength /\%81v./
+set colorcolumn=81,101
+set tabstop=2
+hi ColorColumn ctermbg=236 ctermfg=124
 autocmd Filetype c,cpp set comments^=:///
 
 nmap <silent> <F8> :YcmForceCompileAndDiagnostics<CR>
