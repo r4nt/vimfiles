@@ -22,6 +22,7 @@ filetype plugin indent on
 so ~/.vim/fix-screen.vim
 
 let g:syntastic_always_populate_loc_list = 1
+let g:ycm_enable_diagnostic_signs = 0
 
 set incsearch
 set hlsearch
