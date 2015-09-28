@@ -65,8 +65,9 @@ nmap <C-Up> :lprev<CR><CR>
 nmap <F11> <Plug>yankstack_substitute_older_paste
 nmap <F12> <Plug>yankstack_substitute_newer_paste
 
-inoremap <C-K> <C-O>:pyf ~/bin/clang-format.py<CR>
+inoremap <C-K> <C-\><C-O>:pyf ~/bin/clang-format.py<CR>
 noremap <C-K> :pyf ~/bin/clang-format.py<CR>
-inoremap <C-L> <C-O>:pyf ~/bin/clang-format-unstable.py<CR>
-noremap <C-L> :pyf ~/bin/clang-format-unstable.py<CR>
+"inoremap <C-L> <C-O>:pyf ~/bin/clang-format-unstable.py<CR>
+"noremap <C-L> :pyf ~/bin/clang-format-unstable.py<CR>
+"   let g:ycm_global_ycm_extra_conf = '/tmp/ycm_extra_conf.py'
 
