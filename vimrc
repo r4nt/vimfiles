@@ -69,5 +69,16 @@ inoremap <C-K> <C-\><C-O>:pyf ~/bin/clang-format.py<CR>
 noremap <C-K> :pyf ~/bin/clang-format.py<CR>
 "inoremap <C-L> <C-O>:pyf ~/bin/clang-format-unstable.py<CR>
 "noremap <C-L> :pyf ~/bin/clang-format-unstable.py<CR>
-"   let g:ycm_global_ycm_extra_conf = '/tmp/ycm_extra_conf.py'
+"let g:ycm_global_ycm_extra_conf = '/tmp/ycm_extra_conf.py'
+
+let g:clang_include_fixer_path = "/usr/bin/clang-include-fixer"
+"let g:ycm_use_clangd=1
+"map <C-I> :pyf /google/data/ro/users/kr/kramerb/include_fixer/clang-include-fixer.py<cr>
+"map <C-I> :let g:clang_include_fixer_query_mode=0<cr>:pyf /google/data/ro/projects/cymbal/tools/include-fixer/clang-include-fixer.py<cr>
+"nnoremap <leader>qf :let g:clang_include_fixer_query_mode=1<cr>:pyf /google/data/ro/projects/cymbal/tools/include-fixer/clang-include-fixer.py<cr>
+
+"Normal mode.
+nnoremap <leader>cf :let g:clang_include_fixer_query_mode=0<cr>:pyf /usr/lib/clang-include-fixer/clang-include-fixer.py<cr>
+"Query mode.
+nnoremap <leader>qf :let g:clang_include_fixer_query_mode=1<cr>:pyf /usr/lib/clang-include-fixer/clang-include-fixer.py<cr>
 
